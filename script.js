@@ -107,10 +107,11 @@ function katanimasiAlt() {
 function katanimasiAlts() {
   new TypeIt(".messageC", {
     strings: [
-      "Aku mau ngucapin terimakasih atas semua perhatian, waktu, rasa sayang kamu yang kamu kasih ke aku selama ini dan kamu udah mau sabar ngadepin aku. Aku juga mau minta maaf kalo aku masih sering banyak salah, banyak omongan ga aku tepatin atau segala yang bikin kamu repot, aku minta maaf yaa 🫠",
-      "<br>Kamu sosok paling sempurna buat aku dan jangan pernah berpikiran negatif kalo aku bakal selingkuh, ninggalin kamu atau yang lainnya yaaa 🥹",
+      "Selamat hari anniversary kita yang pertama! Udah nggak kerasa kita udah setahun jalanin ini semua—dari seneng, sedih, berantem, sampai adu ego kita yang nggak ada abisnya. Wkwkwk.",
+      "<br>Aku nggak nyangka, dari yang awalnya cuma chat-chatan gabut di apk haram, terus jadian, dan akhirnya aku bisa ketemu kamu. Menurut aku itu tantangan kita yang nggak mudah, apalagi ditambah beda agama + LDR. Kurang apa lagi coba?",
+      "<br>Pokoknya aku sayang banget sama kamu. Aku mau sama kamu teruus ♥️",
       "<br><b>Terakhir,</b><br>Aku cuma mau kasih tau<br>kalau kamu itu...",
-      "<br>Kamu penting,<br>Kamu terbaik,<br>Kamu cintaku,<br>Kamu sayangku,<br>Kamu milikku,<br>Kamu duniaku,<br>Kamu semestaku,<br>Kamu rumahku,<br>Kamu segalanya buat akuu 🫶<br><br><i class='fontAlt'>I lovee yoouu Sayaangg</i> 😻💐",
+      "<br>Kamu cintaku,<br>Kamu sayangku,<br>Kamu milikku,<br>Kamu duniaku,<br>Kamu semestaku,<br>Kamu rumahku,<br>Kamu segalanya buat akuu 🫶<br><br><i class='fontAlt'>I lovee yoouu Sayaangg</i> 😻💐",
     ],
     startDelay: 1,
     speed: 24,
