@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Love Bridge Builder — Co‑Op</title>
+    <!-- Firebase (compat untuk kemudahan) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand">💞 <span>Love</span> Bridge Builder — Co‑Op</div>
+      <div class="controls">
+        <input
+          id="roomId"
+          type="text"
+          placeholder="Kode Room (contoh: HANSS)"
+        />
+        <button id="btnCreate" class="primary">Buat Room</button>
+        <button id="btnJoin" class="ghost">Join Room</button>
+      </div>
+      <div class="controls">
+        <button id="btnRoleA">Peran A: Pilar</button>
+        <button id="btnRoleB">Peran B: Papan</button>
+        <span id="roleLabel" class="pill" style="display: none"></span>
+      </div>
+      <div class="controls">
+        <button id="btnUndo" title="Undo elemen terakhir">Undo</button>
+        <button id="btnReset" class="ghost" title="Reset room">Reset</button>
+        <button id="btnTest" class="success" title="Uji jembatan">
+          Uji Jembatan
+        </button>
+      </div>
+    </header>
+
+    <div class="toolbar">
+      <span class="pill">A = Tap untuk letakkan <b>Pilar</b> (tiang)</span>
+      <span class="pill">B = Tap dua titik untuk hubungkan <b>Papan</b></span>
+    </div>
+
+    <div id="stageWrap">
+      <canvas id="stage"></canvas>
+      <div class="legend">
+        Room: <b id="roomBadge">-</b><br />Peran: <b id="roleBadge">-</b>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        Tips: Bangun jembatan dari tebing kiri ke kanan. Kalau garis hijau penuh
+        saat uji — cinta kalian tersambung! 💚
+      </div>
+      <div id="status">Offline</div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <div class="modal" id="winModal">
+      <div class="modal-card">
+        <div class="hearts">💖💖💖</div>
+        <h2>Berhasil ketemu di tengah! 🥰</h2>
+        <p>Jembatan cinta kalian kokoh. Mau main lagi?</p>
+        <div
+          style="
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 10px;
+          "
+        >
+          <button onclick="location.reload()">Main Ulang</button>
+          <button id="closeModal" class="primary">Lanjut Bangun</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
