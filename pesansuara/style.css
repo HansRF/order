@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(180deg, #071025, #0f172a);
   font-family: "Itim", cursive;
   display: flex;
   justify-content: center;
@@ -9,17 +8,28 @@ body {
   height: 100vh;
   color: #fff;
   text-align: center;
+  overflow: hidden;
+  position: relative;
 }
+
+/* Background blur */
 #bodyblur {
-  opacity: 0.4;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  transition: all 1s ease;
+  z-index: -2; /* biar selalu di belakang */
 }
+
+#wallpaper {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* biar full screen rapi */
+  transform: scale(1);
+  transition: all 1.3s ease;
+}
+
 #thisblur {
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
@@ -28,28 +38,31 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  pointer-events: none; /* biar gak nutup klik */
 }
-#wallpaper {
-  width: 100%;
-  height: 100%;
-  transform: scale(2);
-  transition: all 1.3s ease;
-}
+
+/* Card */
 .card {
-  background: #0b1220;
+  background: rgba(0, 0, 0, 0.750);
   padding: 30px;
   border-radius: 18px;
   box-shadow: 0 0 20px rgba(255, 107, 129, 0.4);
   width: 320px;
+  z-index: 1; /* di atas blur */
+  position: relative;
 }
+
 h2 {
   margin-bottom: 20px;
   color: #ff6b81;
 }
+
 audio {
   width: 100%;
   margin-top: 15px;
 }
+
+/* Tombol kembali */
 .back-btn {
   margin-top: 25px;
   background: #ff6b81;
@@ -59,7 +72,10 @@ audio {
   cursor: pointer;
   font-size: 16px;
   color: white;
+  transition: 0.3s;
 }
+
 .back-btn:hover {
   background: #ff3b5c;
+  transform: scale(1.05);
 }
