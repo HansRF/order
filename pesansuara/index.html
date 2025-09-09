@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pesan Suara Untukmu</title>
-  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="card">
-    <h2>🎤 Pesan Suara Buat Kamu</h2>
-    <p>Dengerin yaa sayang 🤍</p>
-    <audio controls>
-      <!-- Ganti link VN sesuai punya lu -->
-      <source src="suara/suara.m4a" type="audio/mpeg">
-      Browser kamu ga support audio
-    </audio>
-    <button class="back-btn" onclick="window.location.href='/'">⬅ Kembali</button>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesan Suara Untukmu</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="bodyblur">
+      <img src="https://feeldreams.github.io/pics/awan6.jpg" id="wallpaper" />
+      <div id="thisblur"></div>
+    </div>
+
+    <div class="card">
+      <h2>🎤 Pesan Suara Buat Kamu</h2>
+      <p>Dengerin yaa sayang 🤍</p>
+      <audio controls>
+        <!-- Ganti link VN sesuai punya lu -->
+        <source src="suara/suara.m4a" type="audio/mpeg" />
+        Browser kamu ga support audio
+      </audio>
+      <button class="back-btn" onclick="window.location.href='/'">
+        ⬅ Kembali
+      </button>
+    </div>
+  </body>
 </html>
