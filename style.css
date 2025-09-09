@@ -606,19 +606,24 @@ body {
 .popup-buttons {
   margin-top: 15px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column; /* tombol ditumpuk ke bawah */
+  align-items: center;    /* biar rata tengah */
+  gap: 12px;              /* kasih jarak antar tombol */
 }
 
 .popup-buttons button {
+  width: 200px; /* biar ukurannya seragam */
   background: #ff6b81;
   border: none;
   color: white;
-  padding: 10px 15px;
+  padding: 10px 0;
   border-radius: 10px;
   cursor: pointer;
+  font-size: 16px;
   transition: 0.3s;
 }
 
 .popup-buttons button:hover {
   background: #e11d48;
 }
+

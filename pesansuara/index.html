@@ -5,48 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pesan Suara Untukmu</title>
   <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(180deg, #071025, #0f172a);
-      font-family: 'Itim', cursive;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      color: #fff;
-      text-align: center;
-    }
-    .card {
-      background: #0b1220;
-      padding: 30px;
-      border-radius: 18px;
-      box-shadow: 0 0 20px rgba(255, 107, 129, 0.4);
-      width: 320px;
-    }
-    h2 {
-      margin-bottom: 20px;
-      color: #ff6b81;
-    }
-    audio {
-      width: 100%;
-      margin-top: 15px;
-    }
-    .back-btn {
-      margin-top: 25px;
-      background: #ff6b81;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 12px;
-      cursor: pointer;
-      font-size: 16px;
-      color: white;
-    }
-    .back-btn:hover {
-      background: #ff3b5c;
-    }
-  </style>
+  <link rel="stylesheet" href="style.cssz" />
 </head>
 <body>
   <div class="card">
@@ -54,7 +13,7 @@
     <p>Dengerin yaa sayang 🤍</p>
     <audio controls>
       <!-- Ganti link VN sesuai punya lu -->
-      <source src="voice-note.mp3" type="audio/mpeg">
+      <source src="suara/suara.m4a" type="audio/mpeg">
       Browser kamu ga support audio
     </audio>
     <button class="back-btn" onclick="window.location.href='index.html'">⬅ Kembali</button>
