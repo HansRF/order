@@ -100,7 +100,7 @@ function showBucinText() {
   const bucinPopup = document.getElementById('bucinPopup');
   const bucinMessage = document.getElementById('bucinMessage');
   if (gameOver) {
-    bucinMessage.textContent = "Game Over";
+    bucinMessage.textContent = "It's okay, you're still mine❤️❤️";
   }
   bucinPopup.classList.add('show');
 }
