@@ -175,6 +175,12 @@ document.getElementById("btnGame").addEventListener("click", () => {
     window.location.href = "/flapybird/index.html"; // ganti sesuai nama file game lo
 });
 
+// Tombol game (pindah halaman game.html)
+document.getElementById("btnPodcast").addEventListener("click", () => {
+    window.location.href = "/pesansuara/index.html"; // ganti sesuai nama file game lo
+});
+
+
 // 🔑 Panggil showPopup() setelah animasi teks selesai
 // contoh: di akhir animasi TypeIt atau animasi lo, tambahin:
 // showPopup();
